@@ -11,8 +11,8 @@ function FormBus() {
     const todayValue = today.toLocaleString();
     console.log(todayValue);
     let random = Math.random();
-    let randomValue = Math.round(random * 1000000 * 2);
-    console.log(Math.round(random * 10000000 + 2));
+    let randomValue = Math.round(random * 10000 * 2);
+    console.log(Math.round(random * 10000 + 2));
     let generatedID = Math.random().toString(36).substring(2, 18);
     console.log(generatedID);
 
@@ -62,7 +62,7 @@ function FormBus() {
             <h3>Alta Bus</h3>
 
             <Input type={"hidden"} id={"id"} inputName={"idBus"} textLabel={"Id bus: "} value={generatedID} />
-            <input type="text" value={generatedID} disabled />
+            <Input type="text" value={generatedID} disabled />
             <Input type={"text"} id={"plate"} inputName={"busPlate"} textLabel={"Bus plate: "} divClassName="" />
             <Input type={"number"} id={"seats"} inputName={"seats"} textLabel={"Number of seats: "} />
             <Input type={"text"} id={"date"} inputName={"date"} textLabel={"Discharge date: "} value={todayValue} />
@@ -70,12 +70,12 @@ function FormBus() {
                 <label htmlFor="">Type: </label> <br />
                 <select name="type" id="select">
                     <option value="Turismo">Turismo</option>
-                    <option value="Lujo">Lujo</option>
+                    <option value="Lujo">escolar</option>
                 </select>
             </div>
             <Input type={"text"} id={"name"} inputName={"name"} textLabel={"Driver's name: "} divClassName="" />
             <Input type={"hidden"} id={"number"} inputName={"licence"} textLabel={"License number: "} value={randomValue} />
-            <input type="text" value={randomValue} disabled />
+            <Input type="text" value={randomValue} disabled />
             <button type="button" id="btnB" onClick={handlerClick}>Register</button>
         </form>
 

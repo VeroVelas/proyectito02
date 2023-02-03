@@ -30,8 +30,8 @@ function FormLogin() {
             .then(response => response.json())
             .then(data => {
                 if (data.status === true) {
-                    alert("Datos correctos");
-                    navigate("/");
+                    alert("Datos correctoss");
+                    navigate("/bus");
                 } else {
                     alert("Error, " + data.message);
                 }
