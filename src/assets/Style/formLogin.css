@@ -1,5 +1,6 @@
 body{
     background:  linear-gradient(to right, #ea80b5, #9934e6);
+    
 }
 .background{
     width: 430px;
@@ -22,7 +23,7 @@ body{
     margin-top: 4%;
 }*/
 form{
-    height: 453px;
+    height: 467px;
     width: 400px;
     background-color: rgba(255,255,255,0.13);
     position: absolute;

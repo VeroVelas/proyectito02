@@ -68,7 +68,7 @@ function FormBus() {
             <Input type={"text"} id={"date"} inputName={"date"} textLabel={"Discharge date: "} value={todayValue} />
             <div>
                 <label htmlFor="">Type: </label> <br />
-                <select name="type" id="select">
+                <select name="type" id="sats">
                     <option value="Turismo">Turismo</option>
                     <option value="Lujo">escolar</option>
                 </select>
